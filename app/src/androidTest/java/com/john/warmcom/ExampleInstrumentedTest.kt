@@ -1,4 +1,4 @@
-package com.example.warmcom
+package com.john.warmcom
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
