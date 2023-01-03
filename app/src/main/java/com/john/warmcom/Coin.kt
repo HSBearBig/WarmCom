@@ -1,4 +1,4 @@
-package com.example.warmcom
+package com.john.warmcom
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

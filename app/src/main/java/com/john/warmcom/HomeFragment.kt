@@ -1,4 +1,4 @@
-package com.example.warmcom
+package com.john.warmcom
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -41,7 +41,7 @@
             android:layout_height="100dp" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/logoutButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="登出" />

@@ -5,17 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-    <Button
-        android:id="@+id/openChatButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Chatroom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:orientation="vertical">
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/MainPageViewPager2"
         android:layout_width="match_parent"
@@ -24,7 +15,8 @@
         app:layout_constraintBottom_toTopOf="@+id/MainPageTabLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+    </androidx.viewpager2.widget.ViewPager2>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/MainPageTabLayout"
@@ -55,4 +47,3 @@
             android:text="Setting" />
     </com.google.android.material.tabs.TabLayout>
 </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>

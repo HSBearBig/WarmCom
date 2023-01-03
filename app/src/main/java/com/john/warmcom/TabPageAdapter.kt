@@ -1,4 +1,4 @@
-package com.example.warmcom
+package com.john.warmcom
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
