@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/infoFinishAskerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <TextView
+        android:id="@+id/AskerinfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="讓我們更加了解你"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AskeNamelinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/AskerGenderlinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/AskerAgelinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AskeNamelinearLayout">
+
+        <TextView
+            android:id="@+id/GenderAskerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/GenderAsker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="輸入性別"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AskerAgelinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/AskerPersonalitylinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AskerGenderlinearLayout">
+
+        <TextView
+            android:id="@+id/AgeAskerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年齡："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/AgeAsker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="輸入年齡"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AskerPersonalitylinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/AskerMentalSituationlinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AskerAgelinearLayout">
+
+        <TextView
+            android:id="@+id/PersonalityAskerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="個性："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/PersonalityAsker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="簡述你的個性"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AskerMentalSituationlinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/AskerMeetProblemlinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AskerPersonalitylinearLayout">
+
+        <TextView
+            android:id="@+id/MentalSituationAskerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身心狀況："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/MentalSituationAsker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="簡述目前的身心狀況"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AskerMeetProblemlinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp">
+
+        <TextView
+            android:id="@+id/MeetProblemAskerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遇到的狀況："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/MeetProblemAsker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="簡述目前遇到的問題"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AskeNamelinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/AskerGenderlinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AskerinfoTitle">
+
+        <TextView
+            android:id="@+id/NameAskerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名稱："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/NickNameAsker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="輸入名字或暱稱"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
