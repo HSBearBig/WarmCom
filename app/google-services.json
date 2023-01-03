@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904658394982",
+    "firebase_url": "https://warmcom-d99af-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "warmcom-d99af",
+    "storage_bucket": "warmcom-d99af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904658394982:android:9c5f72167459955b84b2a7",
+        "android_client_info": {
+          "package_name": "com.john.warmcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904658394982-jjuajdjltv0o43e220qjiunig9h007s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCffOIc6ONEq66cySPfzd5O7pzL1n06Y-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904658394982-jjuajdjltv0o43e220qjiunig9h007s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
