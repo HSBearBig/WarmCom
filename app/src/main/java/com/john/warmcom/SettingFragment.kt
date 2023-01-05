@@ -69,5 +69,9 @@ class SettingFragment : Fragment() {
             requireActivity().finish()
         }
 
+        view.findViewById<Button>(R.id.Coinbtn).setOnClickListener {
+            startActivity(Intent(context, Coin::class.java))
+        }
+
     }
 }
