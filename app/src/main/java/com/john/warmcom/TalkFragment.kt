@@ -25,5 +25,9 @@ class TalkFragment : Fragment() {
             intent.putExtra("email", "yuki11835@gmail.com")
             startActivity(intent)
         }
+
+        view.findViewById<Button>(R.id.AskProblemAskerButton).setOnClickListener {
+            startActivity(Intent(context, AskQuestionActivity::class.java))
+        }
     }
 }
