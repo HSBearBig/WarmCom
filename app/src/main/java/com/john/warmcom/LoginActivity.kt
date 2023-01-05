@@ -38,6 +38,12 @@ class LoginActivity: AppCompatActivity() {
                         if (task.isSuccessful) {
                             Toast.makeText(this, "登入成功", Toast.LENGTH_SHORT).show()
                             UserDetails.userUID = auth.currentUser?.uid
+                            UserDetails.userEmail = accountText
+                            if (accountText == "john6446500@gmail.com") {
+                                UserDetails.userType = 1
+                            } else {
+                                UserDetails.userType = 2
+                            }
                             startActivity(Intent(this, MainActivity::class.java))
                             finish()
                         } else {

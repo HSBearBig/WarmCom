@@ -19,10 +19,16 @@ class TalkFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var email: String = ""
 
         view.findViewById<Button>(R.id.matchStatusTest1).setOnClickListener {
+            if (UserDetails.userEmail == "john6446500@gmail.com") {
+                email = "yuki11835@gmail.com"
+            } else {
+                email = "john6446500@gmail.com"
+            }
             val intent = Intent(context, ChatActivity::class.java)
-            intent.putExtra("email", "yuki11835@gmail.com")
+            intent.putExtra("email", email)
             startActivity(intent)
         }
     }
